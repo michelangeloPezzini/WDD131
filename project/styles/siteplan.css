@@ -1,0 +1,75 @@
+/* Color Variables */
+:root {
+  --primary-color: #04D361;
+  --secondary-color: #14181B;
+  --text-color: #FFFFFF;
+  --background-color: #14181B;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 10px;
+}
+
+header {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.logo h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  margin: 20px 0;
+}
+
+h2 {
+  color: var(--primary-color);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+}
+
+p, ul {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+footer {
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* Tablet view */
+@media (min-width: 768px) {
+  .grid-container {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop view */
+@media (min-width: 1024px) {
+  .grid-container {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
