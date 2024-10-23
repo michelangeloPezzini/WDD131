@@ -17,10 +17,18 @@
   <p id="reviewCount"></p>
 
   <footer>
-    <p>Common footer content</p>
+    <p>©<span id="currentyear"></span> Michelangelo Pezzini | Brazil</p>
+    <span id="lastModified"></span>
   </footer>
 
   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+      document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    });
+
+
     let reviewCount = localStorage.getItem('reviewCount') || 0;
     reviewCount++;
     localStorage.setItem('reviewCount', reviewCount);
