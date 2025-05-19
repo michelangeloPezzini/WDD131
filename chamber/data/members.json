@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Confeitaria do Lago",
+        "address": "SHIS QI 15, Lago Sul",
+        "phone": "+55 61 3248-1010",
+        "website": "https://confeitariadolago.com.br",
+        "image": "confeitaria-lago.jpg",
+        "imagePath": "images/confeitaria-lago.jpg",
+        "membership": 3,
+        "industry": "Restaurant",
+        "description": "Traditional Brazilian confectionery since 1963."
+    },
+    {
+        "name": "Hospital Sarah Kubitschek",
+        "address": "SMHS Quadra 501, Bloco A",
+        "phone": "+55 61 3319-5000",
+        "website": "https://www.sarah.br",
+        "image": "sarah-hospital.jpg",
+        "imagePath": "images/sarah-hospital.jpg",
+        "membership": 2,
+        "industry": "Healthcare",
+        "description": "Renowned rehabilitation hospital network."
+    },
+    {
+        "name": "JK Shopping",
+        "address": "Avenida Hélio Prates, QNM 34",
+        "phone": "+55 61 3246-7000",
+        "website": "https://www.jkshopping.com.br",
+        "image": "jk-shopping.jpg",
+        "imagePath": "images/jk-shopping.jpg",
+        "membership": 3,
+        "industry": "Retail",
+        "description": "Large shopping mall in Taguatinga."
+    },
+    {
+        "name": "Banco de Brasília",
+        "address": "SBS Quadra 2, Bloco A",
+        "phone": "+55 61 3213-5000",
+        "website": "https://www.brb.com.br",
+        "image": "brb-bank.jpg",
+        "imagePath": "images/brb-bank.jpg",
+        "membership": 3,
+        "industry": "Finance",
+        "description": "Regional bank serving the Federal District."
+    },
+    {
+        "name": "Pátio Brasil Shopping",
+        "address": "SCS Quadra 7, Asa Sul",
+        "phone": "+55 61 2107-7400",
+        "website": "https://www.patiobrasil.com.br",
+        "image": "patio-brasil.jpg",
+        "imagePath": "images/patio-brasil.jpg",
+        "membership": 2,
+        "industry": "Retail",
+        "description": "Popular shopping center in the city center."
+    },
+    {
+        "name": "Restaurante Mangai",
+        "address": "SCS Quadra 4, Bloco B",
+        "phone": "+55 61 3322-4242",
+        "website": "https://www.mangai.com.br",
+        "image": "mangai-restaurant.jpg",
+        "imagePath": "images/mangai-restaurant.jpg",
+        "membership": 1,
+        "industry": "Restaurant",
+        "description": "Traditional northeastern Brazilian cuisine."
+    },
+    {
+        "name": "Teatro Nacional",
+        "address": "Setor Cultural Norte",
+        "phone": "+55 61 3325-6239",
+        "website": "https://www.teatronacional.com.br",
+        "image": "teatro-nacional.jpg",
+        "imagePath": "images/teatro-nacional.jpg",
+        "membership": 2,
+        "industry": "Arts",
+        "description": "Iconic theater designed by Oscar Niemeyer."
+    }
+]

@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
@@ -12,8 +12,13 @@ body {
   overflow-y: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
 }
 
 img {
@@ -25,7 +30,7 @@ img {
   display: block;
 }
 
-header span{
+header span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,11 +63,11 @@ header h1 {
 }
 
 #menu::before {
-  content: '☰';
+  content: "☰";
 }
 
 #menu.open::before {
-  content: '✖';
+  content: "✖";
 }
 
 nav {
@@ -83,7 +88,7 @@ nav {
   padding: 1rem;
   color: white;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .navigation li a:hover {
@@ -106,39 +111,41 @@ main {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
 }
-.home{
+.home {
   color: #3d0063;
 }
 
-.card1 h2, .card2 h2, .card3 h2 {
-border-radius: 10px;
- background-color: #6e17a8;
- padding: 15px;
- margin-top: 0;
- margin-bottom: 0;
+.card1 h2,
+.card2 h2,
+.card3 h2 {
+  border-radius: 10px;
+  background-color: #6e17a8;
+  padding: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .card1 {
   background-color: #3d0063;
-  grid-column: 1/3 ;
+  grid-column: 1/3;
   color: white;
   border-radius: 5px;
 }
 
 .card2 {
   background-color: #3d0063;
-  grid-column: 3/5 ;
+  grid-column: 3/5;
   color: white;
   border-radius: 5px;
 }
 
-.card2 img{
+.card2 img {
   padding: 15px;
 }
 
 .card3 {
   background-color: #3d0063;
-  grid-column: 1/5 ;
+  grid-column: 1/5;
   text-align: center;
   color: white;
   border-radius: 5px;
@@ -166,7 +173,7 @@ border-radius: 10px;
 
 .controls button:hover {
   background-color: #04d361;
-  color: #14181B;
+  color: #14181b;
 }
 
 #total-credits {
@@ -201,14 +208,10 @@ footer {
   background-color: #3d0063;
   color: #fafafa;
   padding: 1rem;
-  position: static;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  flex-shrink: 0;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 
 @media (max-width: 768px) {
   header h1 {
@@ -234,11 +237,13 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .card1, .card2, .card3 {
+  .card1,
+  .card2,
+  .card3 {
     grid-column: 1/2;
   }
 
-  header span{
+  header span {
     text-align: center;
   }
 }

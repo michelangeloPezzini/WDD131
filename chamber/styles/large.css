@@ -1,0 +1,42 @@
+@media (min-width: 1024px) {
+  header {
+    padding: 1rem 3rem;
+    display: flex;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .hero {
+    grid-column: 1 / -1;
+  }
+
+  .event {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .weather {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .news {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+  }
+
+  .spotlights {
+    grid-column: 3;
+    grid-row: 2 / span 2;
+  }
+
+  .spotlight-container {
+    grid-template-columns: 1fr;
+  }
+
+  .join {
+    grid-column: 1 / -1;
+  }
+}

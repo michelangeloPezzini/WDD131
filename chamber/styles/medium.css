@@ -1,0 +1,53 @@
+@media (min-width: 600px) {
+  header {
+    padding: 1rem 3rem;
+    display: flex;
+  }
+  .logo-container {
+    margin-bottom: 0;
+  }
+
+  nav {
+    order: 1;
+    width: 100%;
+  }
+
+  #hamburgerBtn {
+    display: none;
+  }
+
+  #primaryNav {
+    display: flex;
+    justify-content: center;
+  }
+
+  #primaryNav li {
+    border-top: none;
+  }
+
+  .social {
+    margin: 0;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .hero {
+    grid-column: 1 / -1;
+  }
+
+  .news {
+    grid-column: 1 / -1;
+  }
+
+  .spotlight-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .join {
+    grid-column: 1 / -1;
+  }
+}

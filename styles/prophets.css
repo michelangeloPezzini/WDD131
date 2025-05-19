@@ -1,0 +1,102 @@
+/* Estilos gerais */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Container dos cards */
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 10px;
+}
+
+/* Estilo individual de cada card */
+#cards section {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+#cards section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Estilos do conteúdo dos cards */
+#cards h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+#cards p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Estilos da imagem */
+#cards img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  border: 1px solid #eee;
+  aspect-ratio: 340/440; /* Mantém a proporção original */
+  object-fit: cover; /* Garante que a imagem preencha o espaço mantendo proporção */
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  background-color: #2c3e50;
+  color: white;
+  border-radius: 8px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+  #cards {
+    grid-template-columns: 1fr;
+  }
+  
+  body {
+    padding: 10px;
+  }
+}
