@@ -4,13 +4,19 @@
     <meta property="og:title" content="WDD 231 - Web Frontend Development" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Directory of businesses in Brasília, Brazil"/>    
+    <meta
+      name="description"
+      content="Directory of businesses in Brasília, Brazil"
+    />
     <meta name="author" content="Michelangelo Pezzini" />
- 
+
     <title>Brasília Chamber of Commerce - Business Directory</title>
 
     <meta property="og:title" content="Brasília Chamber of Commerce" />
-    <meta property="og:description" content="Discover local businesses in Brasília"/>
+    <meta
+      property="og:description"
+      content="Discover local businesses in Brasília"
+    />
 
     <link rel="icon" href="images/icon.png" />
     <link rel="stylesheet" href="css/normalize.css" />
@@ -18,6 +24,7 @@
     <link rel="stylesheet" href="styles/medium.css" />
     <link rel="stylesheet" href="styles/large.css" />
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/hamburguer.js" defer></script>
   </head>
   <body>
     <div class="banner">
@@ -26,103 +33,32 @@
       </p>
     </div>
     <header>
-      <div class="logo-container">
-        <img
-          src="../images/brasilia.jpg"
-          alt="Brasília Chamber Logo"
-          width="100"
-          height="100"
-        />
-        <div class="title">
-          <h1>Brasília</h1>
-          <h2>Chamber of Commerce</h2>
-        </div>
+      <div class="header-content">
+        <a href="index.html" class="logo-link">
+          <img
+            src="images/brasilia-wallpaper.jpg"
+            alt="Brasília Chamber of Commerce Logo"
+            class="logo"
+          />
+          <span class="site-title">Brasília Chamber of Commerce</span>
+        </a>
+        <button class="hamburger-menu" aria-label="Abrir menu de navegação">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <button id="hamburgerBtn">&#9776;</button>
-        <ul id="primaryNav">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="discover.html">Discover</a></li>
-          <li><a href="directory.html">Directory</a></li>
-          <li><a href="join.html">Join</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
     </header>
     <main>
-      <div class="hero">
-        <picture>
-          <source
-            media="(max-width: 600px)"
-            srcset="images/brasilia-wallpaper.jpg"
-          />
-          <source
-            media="(max-width: 1024px)"
-            srcset="images/brasilia-wallpaper.jpg"
-          />
-          <img src="images/brasilia-wallpaper.jpg" alt="Brasília city view" />
-        </picture>
-        <div class="hero-content">
-          <h2>Welcome to Brasília</h2>
-          <a href="join.html" class="btn">Join the Chamber</a>
-        </div>
-      </div>
-
-      <section class="event">
-        <h2>Upcoming Events</h2>
-        <div class="event-content">
-          <h3>Business Networking</h3>
-          <p>📅 Wednesday at 7:00 PM</p>
-          <p>📍 Palácio do Planalto</p>
-          <p>
-            Join us for our monthly networking event with local business
-            leaders.
-          </p>
-        </div>
-      </section>
-
-      <section class="weather">
-        <h2>Current Weather</h2>
-        <div class="current-weather">
-          <img src="" alt="" id="weather-icon" />
-          <p><span id="current-temp"></span>°C</p>
-          <p id="weather-desc"></p>
-          <p>High: <span id="high-temp"></span>°C</p>
-          <p>Low: <span id="low-temp"></span>°C</p>
-          <p>Humidity: <span id="humidity"></span>%</p>
-        </div>
-
-        <div class="forecast">
-          <h3>3-Day Forecast</h3>
-          <div class="forecast-container" id="forecast">
-          </div>
-        </div>
-      </section>
-
-      <section class="news">
-        <h2>News Release</h2>
-        <p>
-          Brasília celebrates 63 years as Brazil's capital with special events
-          throughout April. The Chamber will host a business fair showcasing
-          local entrepreneurs from April 15-20 at the National Stadium.
-        </p>
-      </section>
-
-      <section class="spotlights">
-        <h2>Member Spotlights</h2>
-        <div class="spotlight-container" id="spotlights">
-        </div>
-      </section>
-
-      <section class="join">
-        <h2>Join Us</h2>
-        <p>
-          Discover how membership in the Brasília Chamber of Commerce can
-          benefit your business!
-        </p>
-        <a href="join.html" class="btn">Join Now</a>
-      </section>
-
       <section class="directory">
         <div class="header-button">
           <h1>Member Directory</h1>
@@ -132,8 +68,7 @@
           </div>
         </div>
 
-        <div id="directoryContainer" class="grid-view">
-        </div>
+        <div id="directoryContainer" class="grid-view"></div>
       </section>
     </main>
 
