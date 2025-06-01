@@ -1,0 +1,79 @@
+/* Styles for thankyou.html */
+
+.thankyou-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px); /* Adjust based on header/footer height */
+  padding: 2rem;
+}
+
+.thankyou-message {
+  background-color: var(--light-color);
+  color: var(--text-color);
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+}
+
+.thankyou-message h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.thankyou-message p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.submitted-info {
+  background-color: var(--secondary-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.submitted-info p {
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+}
+
+.submitted-info p:last-child {
+  margin-bottom: 0;
+}
+
+.submitted-info strong {
+  color: var(--accent-color);
+}
+
+.return-home {
+  margin-top: 2rem;
+}
+
+.return-home .btn {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .thankyou-message {
+    padding: 1.5rem;
+  }
+
+  .thankyou-message h2 {
+    font-size: 1.6rem;
+  }
+
+  .thankyou-message p {
+    font-size: 1rem;
+  }
+}

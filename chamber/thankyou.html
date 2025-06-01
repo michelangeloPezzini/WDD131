@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Thank you for joining the Brasília Chamber of Commerce"
+    />
+    <meta name="author" content="Michelangelo Pezzini" />
+    <title>Brasília Chamber of Commerce - Thank You!</title>
+    <link rel="icon" href="images/icon.png" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="stylesheet" href="styles/thankyou.css" />
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/hamburguer.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+  </head>
+  <body>
+    <div class="banner">
+      <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    </div>
+    <header>
+      <div class="header-content">
+        <a href="index.html" class="logo-link">
+          <img
+            src="images/brasilia-wallpaper.jpg"
+            alt="Brasília Chamber of Commerce Logo"
+            class="logo"
+          />
+          <span class="site-title">Brasília Chamber of Commerce</span>
+        </a>
+        <button
+          class="hamburger-menu"
+          aria-label="Abrir/Fechar menu de navegação"
+        ></button>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="thankyou-main">
+      <section class="thankyou-message">
+        <h2>Thank You for Your Application!</h2>
+        <p>Your membership application has been successfully submitted.</p>
+        <p>We appreciate your interest in joining the Brasília Chamber of Commerce.</p>
+        <p>Below is a summary of the information you provided:</p>
+
+        <div class="submitted-info">
+          <p><strong>First Name:</strong> <span id="displayFname"></span></p>
+          <p><strong>Last Name:</strong> <span id="displayLname"></span></p>
+          <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+          <p><strong>Mobile Phone:</strong> <span id="displayPhone"></span></p>
+          <p><strong>Business/Organization Name:</strong> <span id="displayBizName"></span></p>
+          <p><strong>Submission Timestamp:</strong> <span id="displayTimestamp"></span></p>
+        </div>
+
+        <p class="return-home">
+          <a href="index.html" class="btn">Return to Homepage</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© Brasília Chamber of Commerce</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
