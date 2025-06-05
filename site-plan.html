@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Hub - Site Plan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3B4CCA; /* Dark Blue (Poké Ball blue) */
+            --secondary-color: #CC0000; /* Red (Poké Ball red) */
+            --accent-color: #FFDE00; /* Yellow (Pikachu yellow) */
+            --text-color: #333333;
+            --background-color: #F0F0F0;
+            --header-font: 'Press Start 2P', cursive;
+            --body-font: 'Roboto', sans-serif;
+        }
+
+        body {
+            font-family: var(--body-font);
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--header-font);
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--secondary-color);
+            text-shadow: 2px 2px var(--accent-color);
+        }
+
+        section {
+            background-color: #FFFFFF;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .color-box {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ccc;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .wireframe-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .wireframe-sketch {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            text-align: center;
+            flex: 1 1 300px;
+            box-sizing: border-box;
+        }
+
+        .wireframe-sketch h4 {
+            margin-top: 0;
+            font-family: var(--body-font); 
+            color: var(--text-color);
+        }
+
+        .wireframe-content {
+            background-color: #f9f9f9;
+            border: 1px solid #eee;
+            min-height: 150px;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pokémon Hub - Site Plan</h1>
+
+    <section>
+        <h2>Site Name</h2>
+        <p><strong>Site Name:</strong> Pokémon Hub</p>
+        <p><strong>Reason for Selection:</strong> "Pokémon Hub" was chosen because it conveys the idea of a central place or a comprehensive resource for all things Pokémon. It suggests that visitors can find various information and functionalities related to Pokémon in one convenient location, aligning perfectly with the project's objective to provide listing, details, and battle simulation features.</p>
+        <p><strong>Optional domain availability:</strong> pokemonhub.com.br</p>
+    </section>
+
+    <section>
+        <h2>Site Purpose</h2>
+        <p>The "Pokémon Hub" website aims to be a comprehensive online resource for Pokémon enthusiasts. It will provide users with an interactive platform to explore the vast world of Pokémon, offering detailed information about individual Pokémon, facilitating the discovery of their strengths and weaknesses, and enabling a fun, simulated battle experience. The site intends to serve as a go-to destination for fans looking to learn more about their favorite creatures, compare them, and engage in virtual battles, all powered by the PokeAPI.</p>
+    </section>
+
+    <section>
+        <h2>Scenarios</h2>
+        <ul>
+            <li><strong>"I want to find out the type advantages and disadvantages of a specific Pokémon before I use it in a battle."</strong> (This scenario drives the need for the "Página de Detalhes do Pokémon" and its "Tabela de fraquezas/resistências" functionality.)</li>
+            <li><strong>"I'm building a new Pokémon team and want to quickly compare the base stats of two Pokémon to see who would be stronger in a head-to-head fight."</strong> (This scenario highlights the importance of the "Página de Batalha Simulada (Versus)" and its "Comparação de status" feature.)</li>
+            <li><strong>"I just started playing a new Pokémon game and need a quick way to browse all the Pokémon and see their official artwork."</strong> (This scenario points to the necessity of the "Página Inicial (Lista de Pokémon)" with its "Listar Pokémon em cards (imagem + nome + tipo)" and "Link para detalhes de cada Pokémon" functionalities.)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Color Schema</h2>
+        <p>The color scheme is inspired by the iconic colors of the Pokémon franchise, specifically the Poké Ball and Pikachu.</p>
+        <ul>
+            <li>
+                <div class="color-box" style="background-color: var(--primary-color);"></div>
+                <strong>Primary Color:</strong> <code>#3B4CCA</code> (Dark Blue)
+                <br><strong>Usage:</strong> Used for headings (H2, H3), primary links, and potentially as a background for navigation elements or important calls to action.
+            </li>
+            <li>
+                <div class="color-box" style="background-color: var(--secondary-color);"></div>
+                <strong>Secondary Color:</strong> <code>#CC0000</code> (Red)
+                <br><strong>Usage:</strong> Used for the main site title (H1), interactive button highlights (e.g., "Batalhar!"), and error messages.
+            </li>
+            <li>
+                <div class="color-box" style="background-color: var(--accent-color);"></div>
+                <strong>Accent Color:</strong> <code>#FFDE00</code> (Yellow)
+                <br><strong>Usage:</strong> Used for text shadows on the main title, hover states for links, and subtle decorative elements to add a pop of color.
+            </li>
+            <li>
+                <div class="color-box" style="background-color: var(--text-color);"></div>
+                <strong>Text Color:</strong> <code>#333333</code> (Dark Grey)
+                <br><strong>Usage:</strong> Used for general body text, paragraph content, and labels.
+            </li>
+            <li>
+                <div class="color-box" style="background-color: var(--background-color);"></div>
+                <strong>Background Color:</strong> <code>#F0F0F0</code> (Light Grey)
+                <br><strong>Usage:</strong> Used for the overall page background, providing a neutral and clean canvas for the content.
+            </li>
+            <li>
+                <div class="color-box" style="background-color: #FFFFFF;"></div>
+                <strong>Content Box Background:</strong> <code>#FFFFFF</code> (White)
+                <br><strong>Usage:</strong> Used for the background of content sections (e.g., cards, detailed information boxes) to ensure readability and structure.
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Typography</h2>
+        <ul>
+            <li>
+                <strong>Header Font:</strong> <code>'Press Start 2P', cursive</code>
+                <br><strong>Usage:</strong> Applied to main headings (H1, H2, H3) to evoke a retro video game feel, fitting the Pokémon theme.
+            </li>
+            <li>
+                <strong>Body Font:</strong> <code>'Roboto', sans-serif</code>
+                <br><strong>Usage:</strong> Used for all general body text, paragraphs, list items, and any other text content to ensure readability and a modern aesthetic.
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Wireframe</h2>
+        <p>Below are conceptual wireframes for the home page (Página Inicial - Lista de Pokémon) for both mobile and desktop views. These are simplified representations of content layout.</p>
+
+        <div class="wireframe-container">
+            <div class="wireframe-sketch">
+                <h4>Mobile View - Home Page</h4>
+                <div class="wireframe-content">
+                    <p>[Header with Site Name/Logo]</p>
+                    <p>[Search Bar (Name/Number)]</p>
+                    <p>[Pokémon Card 1 (Image + Name + Type)]</p>
+                    <p>[Pokémon Card 2 (Image + Name + Type)]</p>
+                    <p>[... More Pokémon Cards ...]</p>
+                    <p>[Pagination Buttons (Prev/Next)]</p>
+                    <p>[Footer]</p>
+                </div>
+            </div>
+
+            <div class="wireframe-sketch">
+                <h4>Desktop View - Home Page</h4>
+                <div class="wireframe-content">
+                    <p>[Header with Site Name/Logo | Navigation Links]</p>
+                    <p>[Search Bar (Name/Number)]</p>
+                    <p>[Grid of Pokémon Cards (Image + Name + Type)]</p>
+                    <p>[Card 1] [Card 2] [Card 3] [Card 4]</p>
+                    <p>[Card 5] [Card 6] [Card 7] [Card 8]</p>
+                    <p>[... More rows of cards ...]</p>
+                    <p>[Pagination Buttons (Prev/Next) or Infinite Scroll Indicator]</p>
+                    <p>[Footer]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>CSS</h2>
+        <p>All styling for this site plan document is embedded within the <code>&lt;style&gt;</code> tags in the head section of this HTML document, demonstrating the chosen color schema and typography. For the actual project, external CSS files will be used for better organization and maintainability.</p>
+        <p>A primary CSS file (e.g., <code>style.css</code>) will define global styles, typography, and color variables. Additional CSS files (e.g., <code>pokemon-list.css</code>, <code>pokemon-details.css</code>, <code>battle.css</code>) will be used to style specific pages or components, ensuring modularity.</p>
+    </section>
+</body>
+</html>
