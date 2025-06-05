@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Catedral Metropolitana de Brasília",
+        "address": "Esplanada dos Ministérios, Brasília - DF, 70040-030",
+        "image": "images/cathedral.webp",
+        "description": "An iconic hyperbolic paraboloid structure designed by Oscar Niemeyer, serving as the Roman Catholic Archdiocese of Brasília. Its unique design allows light to filter through stained glass panels, creating a stunning visual effect. It's a must-visit for its architectural significance and spiritual ambiance."
+    },
+    {
+        "name": "Congresso Nacional do Brasil",
+        "address": "Praça dos Três Poderes, Brasília - DF, 70165-900",
+        "image": "images/congress.webp",
+        "description": "The seat of Brazil's legislative power, recognized by its twin towers and the distinctive dome and bowl. It's a symbol of Brazilian democracy and an architectural marvel, attracting visitors interested in politics and modern design. Guided tours are often available."
+    },
+    {
+        "name": "Palácio do Itamaraty",
+        "address": "Esplanada dos Ministérios, Bloco H, Brasília - DF, 70170-900",
+        "image": "images/itamaraty.webp",
+        "description": "The headquarters of the Ministry of Foreign Affairs, also known as the Palace of Arches. Designed by Oscar Niemeyer, it features a stunning blend of glass, water, and tropical gardens. It's considered one of the most beautiful diplomatic buildings in the world."
+    },
+    {
+        "name": "Ponte Juscelino Kubitschek",
+        "address": "Lago Paranoá, Brasília - DF, 70297-400",
+        "image": "images/jk-bridge.webp",
+        "description": "A striking bridge spanning Lake Paranoá, named after the former president who founded Brasília. Its three asymmetric steel arches make it an engineering and architectural masterpiece, especially beautiful at sunset when lit up. Popular for walks and scenic views."
+    },
+    {
+        "name": "Santuário Dom Bosco",
+        "address": "EQS 207/208 Asa Sul, Brasília - DF, 70275-010",
+        "image": "images/dom-bosco.webp",
+        "description": "A church dedicated to Don Bosco, known for its breathtaking interior adorned with 80 stained glass panels in various shades of blue. When the sun shines through, the entire interior glows with an ethereal blue light, creating a truly unique and spiritual experience."
+    },
+    {
+        "name": "Torre de TV de Brasília",
+        "address": "Eixo Monumental, Setor de Divulgação Cultural, Brasília - DF, 70070-701",
+        "image": "images/tv-tower.webp",
+        "description": "A prominent landmark offering panoramic views of Brasília from its observation deck. At its base, a popular craft fair (Feira da Torre) takes place on weekends, selling local crafts, food, and souvenirs. It's a great spot for both sightseeing and cultural immersion."
+    },
+    {
+        "name": "Parque da Cidade Sarah Kubitschek",
+        "address": "Eixo Monumental Sul, Brasília - DF, 70620-000",
+        "image": "images/city-park.webp",
+        "description": "One of the largest urban parks in the world, covering a vast area with extensive green spaces, sports facilities, and walking/cycling trails. It's a favorite spot for locals to relax, exercise, and enjoy nature within the city. Features include amusement parks and restaurants."
+    },
+    {
+        "name": "Palácio do Planalto",
+        "address": "Praça dos Três Poderes, Brasília - DF, 70150-903",
+        "image": "images/planalto-palace.webp",
+        "description": "The official workplace of the President of Brazil. This modernist building, another Niemeyer creation, is part of the Praça dos Três Poderes complex. While internal access is restricted, its exterior and surroundings are popular for photographs and civic events."
+    }
+]

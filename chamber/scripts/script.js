@@ -1,12 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const lastModified = document.getElementById("lastModified");
-  const footerFirstParagraph = document.querySelector("footer p:first-of-type");
-  const lastModifiedDate = document.lastModified;
-  lastModified.textContent = `Last modified: ${lastModifiedDate}`;
+// scripts/script.js
 
-  const currentYear = new Date().getFullYear();
-  footerFirstParagraph.textContent = `©${currentYear} | Michelangelo | Pezzini | Brazil`;
+// Last Modified Date
+document.addEventListener('DOMContentLoaded', () => {
+    const lastModified = document.getElementById('lastModified');
+    if (lastModified) {
+        lastModified.textContent = `Last Modified: ${document.lastModified}`;
+    }
+
+    // Hide banner on click
+    const banner = document.querySelector('.banner');
+    if (banner) {
+        banner.addEventListener('click', () => {
+            banner.style.display = 'none';
+        });
+    }
 });
+
 
 const container = document.getElementById("directoryContainer");
 const gridBtn = document.getElementById("gridBtn");
